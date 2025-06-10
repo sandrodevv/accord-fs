@@ -1,0 +1,12 @@
+{
+  "name": "accord",
+  "version": "1.0.0",
+  "description": "ACCORD Development Project",
+  "scripts": {
+    "watch-scss": "sass --watch ACCORD/website/static/css:ACCORD/website/static/css",
+    "compile-scss": "sass ACCORD/website/static/css:ACCORD/website/static/css"
+  },
+  "dependencies": {
+    "sass": "^1.86.3"
+  }
+}

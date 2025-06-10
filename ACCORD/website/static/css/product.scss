@@ -1,0 +1,405 @@
+$primary-color: black;
+
+body {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 15px;
+        width: 15px;
+        background: #2196f3;
+        border-radius: 50%;
+        pointer-events: auto;
+        
+    }
+    input[type="range"]::-moz-range-thumb {
+        -moz-appearance: none;
+        height: 15px;
+        width: 15px;
+        background: #2196f3;
+        border-radius: 50%;
+        pointer-events: auto;
+        
+    }
+
+    .filtering-container {
+        display: flex;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 50px;
+        
+        .filtering-container-left {
+            // .price-input {
+            //     width: 100%;
+            //     display: flex;
+            //     margin: 30px 0 35px;
+            //     position: relative;
+            //     flex-direction: column;
+            //     .field {
+            //         width: 100%;
+            //         height: 100%;
+            //         display: flex;
+            //         align-items: center;
+            //         .slider-input {
+            //             width: 100%;
+            //             height: 100%;
+            //             outline: none;
+            //             font-size: 19px;
+            //             text-align: center;
+            //             margin-left: 12px;
+            //             border-radius: 5px;
+            //             border: 1px solid #9a9a9a;
+            //             -moz-appearance: none;
+                        
+
+            //         }
+
+                    
+            //     }
+            //     .slider {
+            //         height: 5px;
+            //         border-radius: 5px;
+            //         background: #d3d3d3;
+            //         position: relative;
+            //         .progress {
+            //             height: 5px;
+            //             left: 25%;
+            //             right: 25%;
+            //             position: absolute;
+            //             border-radius: 5px;
+            //             background: #2196f3;
+            //         }    
+
+            //     }
+            //     .range-input {
+            //         position: relative;
+
+            //         .range-slider {
+            //             position: absolute;
+            //             top: -5px;
+            //             height: 5px;
+            //             width: 100%;
+            //             background: none;
+            //             -webkit-appearance: none;
+            //             pointer-events: none;
+                        
+            //         }
+            //     }
+            // }
+
+
+            
+            
+            .custom-wrapper {
+                margin: 0;
+                width: 100%;
+                padding: 0px 25px 40px;
+                position: relative;
+                left: 63px;
+            }
+            
+            .header {
+                h2 {
+                    font-size: 30px;
+                    color: #01940b;
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                }
+            }
+            
+            /* Styles for the price input container */
+            .price-input-container {
+                width: 100%;
+            }
+            
+            .price-input {
+                width: 100%;
+                font-size: 19px;
+                color: #555;
+                display: flex;
+                gap: 20px;
+
+                .price-field {
+                    display: flex;
+                    margin-bottom: 22px;
+                    gap: 12px;
+
+                    span {
+                        margin-top: 6px;
+                        font-size: 17px;
+                    }
+
+                    input {
+                        flex: 1;
+                        height: 35px;
+                        font-size: 15px;
+                        font-family: "DM Sans", sans-serif;
+                        border-radius: 9px;
+                        text-align: center;
+                        border: 0px;
+                        background: #e4e4e4;
+                        width: 125px;
+                    }
+                }
+            }
+            
+            /* Remove Arrows/Spinners */
+            input {
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+            
+            .slider {
+                width: 100%;
+                height: 6px;
+                position: relative;
+                background: #e4e4e4;
+                border-radius: 5px;
+
+                .price-slider {
+                    height: 100%;
+                    left: 25%;
+                    right: 15%;
+                    position: absolute;
+                    border-radius: 5px;
+                    background: #01940b;
+                }
+            }
+            
+            .range-input {
+                position: relative;
+
+                input {
+                    position: absolute;
+                    width: 100%;
+                    height: 5px;
+                    background: none;
+                    top: -5px;
+                    pointer-events: none;
+                    cursor: pointer;
+                    -webkit-appearance: none;
+
+                    &[type="range"] {
+                        &::-webkit-slider-thumb {
+                            height: 18px;
+                            width: 18px;
+                            border-radius: 70%;
+                            background: #555;
+                            pointer-events: auto;
+                            -webkit-appearance: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .filtering-container-right {
+            .switch {
+                font-size: 17px;
+                position: relative;
+                display: inline-block;
+                width: 64px;
+                height: 34px;
+                background-color: grey;
+                border-radius: 20px;
+  
+                &:hover {
+                  cursor: pointer;
+                }
+                .usd-currency {
+                  .usdcurrency {
+                    color: green;
+                  }
+                }
+                .gel-currency {
+                  .gel-currency {
+                    color: black;
+                  }
+                }
+              }
+              
+              .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+                
+              }
+              
+              
+              
+              .currency-USD .usd-currency {
+                position: absolute;
+                top: 10px;
+                left: 6px;
+                z-index: 1;
+                width: 24px;
+                height: 24px;
+              }
+              
+              .currency-GEL .gel-currency {
+                fill: #73C0FC;
+                position: absolute;
+                top: 10px;
+                left: 38px;
+                z-index: 1;
+                width: 24px;
+                height: 24px;
+              }
+            
+        }
+    }
+
+
+
+
+
+    section {
+        #wrapp {
+            .productCard {
+                display: flex;
+                margin-top: 50px;
+                .images {
+                    img {
+                        width: 27%;
+                    }
+                }
+
+                .description {
+                    // margin-top: 50px;
+                    width: 15%;
+                    border-right: 1px solid rgba(0, 0, 0, 0.329);
+                    p {
+                        color: $primary-color;
+                    }
+                    p.productTxt {
+                        font-weight: 600;
+                        
+                    }
+                }
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .bedrooms {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .square-meter {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .floor {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .apartamentinfo {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 2%;
+                    .apartment-card {
+                        display: flex;
+                        width: 100%;
+                        height: 330px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+                        
+                        .apartment-images {
+                            width: 30%;
+                            .main-image-container {
+                                width: 77%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .apartment-details { 
+                            width: 70%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 100px;
+                            
+
+                            .apartment-square-meter {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                label {
+                                    font-weight: 600;
+                                    color: $primary-color;
+                                }
+                                p {
+                                    color: $primary-color;
+                                }
+                            }
+                            .apartment-bedrooms {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                label {
+                                    font-weight: 600;
+                                    color: $primary-color;
+                                }
+                                p {
+                                    color: $primary-color;
+                                }
+                            }
+                            .apartment-price {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                label {
+                                    font-weight: 600;
+                                    display: flex;
+                                    width: 50px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $primary-color;
+                                }
+
+                                p {
+                                    width: 63px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                        
+                    }
+
+                }
+            }
+        }    
+    }
+}

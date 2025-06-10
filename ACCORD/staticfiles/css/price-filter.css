@@ -1,0 +1,9 @@
+body main .filtering-container {
+  background-color: black !important;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  min-height: 200px; }
+
+/*# sourceMappingURL=price-filter.css.map */

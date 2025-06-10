@@ -1,0 +1,217 @@
+$primary-color: black;
+
+body {
+
+    .filtering-container {
+        display: flex;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 50px;
+        .filtering-container-left {
+
+            
+            
+        }
+
+        .filtering-container-right {
+            .switch {
+                font-size: 17px;
+                position: relative;
+                display: inline-block;
+                width: 64px;
+                height: 34px;
+                background-color: grey;
+                border-radius: 20px;
+  
+                &:hover {
+                  cursor: pointer;
+                }
+                .usd-currency {
+                  .usdcurrency {
+                    color: green;
+                  }
+                }
+                .gel-currency {
+                  .gel-currency {
+                    color: black;
+                  }
+                }
+              }
+              
+              .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+                
+              }
+              
+              
+              
+              .currency-USD .usd-currency {
+                position: absolute;
+                top: 10px;
+                left: 6px;
+                z-index: 1;
+                width: 24px;
+                height: 24px;
+              }
+              
+              .currency-GEL .gel-currency {
+                fill: #73C0FC;
+                position: absolute;
+                top: 10px;
+                left: 38px;
+                z-index: 1;
+                width: 24px;
+                height: 24px;
+              }
+            
+        }
+    }
+
+
+
+
+
+    section {
+        #wrapp {
+            .productCard {
+                display: flex;
+                margin-top: 50px;
+                .images {
+                    img {
+                        width: 27%;
+                    }
+                }
+
+                .description {
+                    // margin-top: 50px;
+                    width: 15%;
+                    border-right: 1px solid rgba(0, 0, 0, 0.329);
+                    p {
+                        color: $primary-color;
+                    }
+                    p.productTxt {
+                        font-weight: 600;
+                        
+                    }
+                }
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .bedrooms {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .square-meter {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .floor {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .apartamentinfo {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 2%;
+                    .apartment-card {
+                        display: flex;
+                        width: 100%;
+                        height: 330px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+                        
+                        .apartment-images {
+                            width: 30%;
+                            .main-image-container {
+                                width: 77%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .apartment-details { 
+                            width: 70%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 100px;
+                            
+
+                            .apartment-square-meter {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                label {
+                                    font-weight: 600;
+                                    color: $primary-color;
+                                }
+                                p {
+                                    color: $primary-color;
+                                }
+                            }
+                            .apartment-bedrooms {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                label {
+                                    font-weight: 600;
+                                    color: $primary-color;
+                                }
+                                p {
+                                    color: $primary-color;
+                                }
+                            }
+                            .apartment-price {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                label {
+                                    font-weight: 600;
+                                    display: flex;
+                                    width: 50px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $primary-color;
+                                }
+
+                                p {
+                                    width: 63px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                        
+                    }
+
+                }
+            }
+        }    
+    }
+}

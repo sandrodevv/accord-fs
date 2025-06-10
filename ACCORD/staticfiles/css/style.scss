@@ -1,0 +1,10 @@
+body {
+    #products-container {
+        display: flex;
+        .card {
+            h1 {
+                color: red;
+            }
+        }
+    }
+}

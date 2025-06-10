@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.currency-toggle {
+  margin-right: 20px; }
+  .currency-toggle .currency-buttons {
+    display: flex;
+    gap: 5px;
+    background: #f8f9fa;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+  .currency-toggle .currency-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #666;
+    font-weight: 500; }
+    .currency-toggle .currency-button:hover {
+      background: rgba(0, 0, 0, 0.05); }
+    .currency-toggle .currency-button.active {
+      background: #007bff;
+      color: white; }
+    .currency-toggle .currency-button .gel-symbol {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1.1em; }
+    .currency-toggle .currency-button i, .currency-toggle .currency-button span {
+      font-size: 14px; }
+
+.currency-icon {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: #666; }
+  .currency-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .currency-icon.active {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1); }
+  .currency-icon.gel::before {
+    content: '₾';
+    font-family: Arial, sans-serif;
+    font-weight: bold; }
+
+/*# sourceMappingURL=currency-converter.css.map */

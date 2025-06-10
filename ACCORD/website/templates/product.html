@@ -1,0 +1,403 @@
+{% load static %}
+{% load sass_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="{% static 'css/index.css' %}" rel="stylesheet" /> -->
+
+    <!-- Try both static and sass tags -->
+    <!-- <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/header.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/socials.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/footer.css' %}" rel="stylesheet" type="text/css" /> -->
+    
+    <!-- Keep sass tags as fallback -->
+    <!-- <link href="{% sass_src 'css/index.scss' %}" rel="stylesheet" type="text/css" /> -->
+    <link href="{% sass_src 'css/product.scss' %}" rel="stylesheet" type="text/css" />
+    <link href="{% sass_src 'css/header.scss' %}" rel="stylesheet" type="text/css" />
+    <link href="{% sass_src 'css/socials.scss' %}" rel="stylesheet" type="text/css" />
+    <link href="{% sass_src 'css/footer.scss' %}" rel="stylesheet" type="text/css" />
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Products</title>
+    <!-- <style>
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .product-card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .product-card p {
+            margin: 5px 0;
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="leftside">
+                <div class="mainlogo">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div class="navPs">
+                  <a href="./index.html">
+                    <p class="p1">ACCORD</p>
+                  </a>
+                    <p class="p2">Development</p>
+                </div>
+                
+            </div>
+            <div class="rightside">
+    
+                <ul class="maxWidthUls">
+                    
+                    <li><a class="boxEffect" href="./aboutus.html">About Us</a></li>
+                    <li><a class="boxEffect" href="./contact.html">Contact</a></li>
+                    <li><a class="boxEffect" href="#projectId">Projects</a></li>
+    
+                </ul>
+                
+                
+    
+    
+    
+                <div class="navbar bg-body-tertiary fixed-top burgerMenu">
+                    <div class="container-fluid">
+                        
+                        <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                          <div class="offcanvas-header">
+                            <div class="h5container">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ACCORD</h5>
+                            </div>
+                            <div class="btncontainer">
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                          </div>
+                          <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./aboutus.html">About Us</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#projectId">Projects</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    
+
+
+
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="filtering-container" >
+      <div class="filtering-container-left">
+        
+        <!-- <h2>price range</h2>
+        <p>use slider to enter min and max price</p>
+
+        <div class="price-input">
+          <div class="field">
+            <span>min</span>
+            <input type="number" id="minPriceSlider" class="input-min slider-input" value="1000">
+          </div>
+          <div class="separator">-</div>
+          <div class="field">
+            <span>max</span>
+            <input type="number" id="maxPriceSlider" class="input-max slider-input" value="2000">
+          </div>
+          <div class="slider">
+            <div class="progress"></div>
+          </div>
+          <div class="range-input">
+            <input type="range" id="minPriceSlider" class="range-min range-slider" min="0" max="10000" value="1000">
+            <input type="range" id="maxPriceSlider" class="range-max range-slider" min="0" max="10000" value="2000">
+          </div>
+        </div> -->
+        
+        
+      <div class="custom-wrapper">
+          <div class="header">
+              <h2 class="projtitle">Price Range Slider</h2>
+          </div>
+          <div class="price-input-container">
+              <div class="price-input">
+                  <div class="price-field">
+                      <span>Minimum Price</span>
+                      <input type="number" class="min-input" value="500">
+                  </div>
+                  <div class="price-field">
+                      <span>Maximum Price</span>
+                      <input type="number" class="max-input" value="8500">
+                  </div>
+              </div>
+              <div class="slider">
+                  <div class="price-slider"></div>
+              </div>
+          </div>
+
+          <!-- Slider -->
+          <div class="range-input">
+              <input type="range" class="min-range" min="0" max="10000" value="500" step="1">
+              <input type="range" class="max-range" min="0" max="10000" value="8500" step="1">
+          </div>
+      </div>
+
+
+
+        
+      </div>
+      <div class="filtering-container-right">
+        <label class="switch">
+
+                  
+          <span class="currency-USD">
+            <p class="usd-currency" ><i class="fa-solid fa-dollar-sign usdcurrency"></i></p>
+          </span>
+
+
+
+
+          <span class="currency-GEL">
+            <p class="gel-currency" >₾</i></p>
+          </span> 
+          
+          
+
+          <input type="checkbox" class="input input-currency">
+          
+        </label>
+      </div>
+
+    </main>
+
+    <section>
+
+
+
+      <div id="wrapp">
+        <!-- <div class="productCard">
+          <div class="description">
+              <div class="title">
+                  <p class="productTxt">Product</p>
+                  <p class="productName" >${detail.product_name || 'N/A'}</p>
+              </div>
+              <div class="price">
+                  <p class="productTxt">Price Range</p>
+                  <p class="productPrice">${detail.price_min} - ${detail.price_max}</p>
+              </div>
+              <div class="bedrooms">
+                  <p class="productTxt">Bedrooms</p>
+                  <p class="productBedrooms">${detail.bedrooms_min} - ${detail.bedrooms_max}</p>
+              </div>
+              <div class="square-meter">
+                  <p class="productTxt">Square Meter</p>
+                  <p class="productSquareMeter">${detail.square_meter_min} - ${detail.square_meter_max}</p>
+              </div>
+              <div class="floor">
+                  <p class="productTxt">Floor</p>
+                  <p class="productFloor">${detail.floor}</p>
+              </div>
+          </div>
+          <div class="apartamentinfo">
+            ${window.ImageHandler.displayProductImages(detail.id, images)}
+            
+          </div>
+      </div> -->
+      </div>
+      
+      
+      
+      
+      </section>
+
+
+
+    <main id="projectId">
+        
+      
+        <aside>
+          <div class="socialsContainer">
+            <a href="https://wa.me/+995577040405" target="_blank"><i class="fa-brands fa-whatsapp fa-shake whatsapp"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrNsZvQnmjWqKRJCXKlzbKFrJBJtXSSTmBSfwlPNhBKLnNNqVfMwggDchVkblfkvSJPg" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="tel:+99577040405" target="_blank"><i class="fas fa-regular fa-phone"></i></a>
+            
+          </div>
+        </aside>
+
+        <div id="wrapper">
+          <!-- Products will be dynamically inserted here -->
+          <!-- <div class="productCard">
+            <div class="description">
+                <div class="title">
+                    <p class="productTxt">Product</p>
+                    <p class="productName" >${detail.product_name || 'N/A'}</p>
+                </div>
+                <div class="price">
+                    <p class="productTxt">Price Range</p>
+                    <p class="productPrice">${detail.price_min} - ${detail.price_max}</p>
+                </div>
+                <div class="bedrooms">
+                    <p class="productTxt">Bedrooms</p>
+                    <p class="productBedrooms">${detail.bedrooms_min} - ${detail.bedrooms_max}</p>
+                </div>
+                <div class="square-meter">
+                    <p class="productTxt">Square Meter</p>
+                    <p class="productSquareMeter">${detail.square_meter_min} - ${detail.square_meter_max}</p>
+                </div>
+                <div class="floor">
+                    <p class="productTxt">Floor</p>
+                    <p class="productFloor">${detail.floor}</p>
+                </div>
+            </div>
+            <div class="images">
+
+            </div>
+        </div> -->
+
+        
+      </div>
+        
+          
+      
+     
+    </main>
+
+
+
+
+    <footer>
+
+  
+
+
+
+
+        <div class="linkGroup">
+          <p>Links</p>
+          <ul>
+            <li>
+              <a href="./aboutus.html">About Us</a>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#projectId">Projects</a></li>
+          </ul>
+        </div>
+        
+        
+        
+        <div class="pianoText">
+          <div class="overlay"></div>
+          <div class="copyrightContainer">
+            <p>© 2024 ACCORD Development GEO, Inc. All rights reserved.</p>
+          </div>
+          <div class="text">
+              <div class="wrapper">
+                  <div id="A" class="letter">A</div>
+                  <div class="shadow">A</div>
+              </div>
+              <div class="wrapper">
+                  <div id="C" class="letter">C</div>
+                  <div class="shadow">C</div>
+              </div>
+              <div class="wrapper">
+                  <div id="C" class="letter">C</div>
+                  <div class="shadow">C</div>
+              </div>
+              <div class="wrapper">
+                  <div id="O" class="letter">O</div>
+                  <div class="shadow">O</div>
+              </div>
+              <div class="wrapper">
+                  <div id="R" class="letter">R</div>
+                  <div class="shadow">R</div>
+              </div>
+              <div class="wrapper">
+                  <div id="D" class="letter">D</div>
+                  <div class="shadow">D</div>
+              </div>
+        
+        
+          </div>
+        
+          
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="socialFooter">
+          <p>Socials</p>
+          <div class="lowDisplayCont">
+            <div class="boxster">
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrNsZvQnmjWqKRJCXKlzbKFrJBJtXSSTmBSfwlPNhBKLnNNqVfMwggDchVkblfkvSJPg" target="_blank"><img src="media/gmailfooter.png" alt=""></a>
+            </div>
+            <div class="boxster">
+              <a href="https://www.instagram.com/accord_development/" target="_blank"><img class="instaFooter" src="media/instafooter.Png" alt=""></a>
+            </div>
+            <div class="boxster">
+              <a href="https://www.facebook.com/Accorddevelopment" target="_blank"><img class="facebookIcon" src="media/facebookFooter1.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        
+        
+    </footer>  
+
+    <!-- <h1>Products</h1>
+    <div id="products-container">
+        <div class="card">
+            <h1>sdasdad</h1>
+        </div>
+    </div> -->
+
+    <!-- <script src="{% static 'js/fetchProducts.js' %}"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="{% static 'js/fetchDetails.js' %}?v={% now 'U' %}"></script>
+
+<script src="{% static 'js/currency-converter.js' %}?v={% now 'U' %}"></script>
+<!-- <script src="{% static 'js/price-filter.js' %}?v={% now 'U' %}"></script> -->
+</body>
+</html> 

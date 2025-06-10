@@ -1,0 +1,151 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+main .boxContainer {
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50%;
+  background-color: #EAF2F7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 545px;
+}
+main .boxContainer .contactBox {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main .boxContainer .contactBox .officeAddress .office .mainP {
+  font-size: 27px;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+main .boxContainer .contactBox .officeAddress .address .seconP {
+  font-size: 20px;
+  font-family: Montserrat;
+}
+main .boxContainer .contactBox .workingHours .hourP {
+  font-size: 27px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+main .boxContainer .contactBox .workingHours .hours {
+  display: flex;
+  gap: 25px;
+}
+main .boxContainer .contactBox .workingHours .hours .firstHour .day {
+  font-size: 20px;
+  font-family: Montserrat;
+}
+main .boxContainer .contactBox .workingHours .hours .firstHour .time {
+  font-size: 20px;
+  font-family: Montserrat;
+}
+main .boxContainer .contactBox .workingHours .hours .secondHour .day {
+  font-size: 20px;
+  font-family: Montserrat;
+}
+main .boxContainer .contactBox .workingHours .hours .secondHour .time {
+  font-size: 20px;
+  font-family: Montserrat;
+}
+main .boxContainer .contactBox .contactNumbers .numbersP {
+  font-size: 27px;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont .number {
+  display: flex;
+  gap: 20px;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont .number a {
+  font-size: 17px;
+  color: black;
+  transition: 0.5s;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont .number a:hover {
+  color: rgba(0, 0, 0, 0.466);
+  transition: 0.5s;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont .number i {
+  margin-top: 4px;
+  font-size: 19px;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont .mail {
+  display: flex;
+  gap: 20px;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont .mail a {
+  font-size: 17px;
+  color: black;
+  transition: 0.5s;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont .mail a:hover {
+  color: rgba(0, 0, 0, 0.466);
+  transition: 0.5s;
+}
+main .boxContainer .contactBox .contactNumbers .numberMailCont .mail i {
+  margin-top: 4px;
+  font-size: 19px;
+}
+
+section .mapContainer iframe {
+  width: 100%;
+  border-radius: 10px;
+  height: 580px;
+}
+
+footer {
+  margin-top: 0px !important;
+}
+
+@media screen and (max-width: 900px) {
+  main .boxContainer {
+    width: 76%;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .boxContainer {
+    width: 90%;
+    height: 643px;
+  }
+  main .boxContainer .contactBox .officeAddress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .boxContainer .contactBox .workingHours .hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .boxContainer .contactBox .workingHours .hours .firstHour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .boxContainer .contactBox .workingHours .hours .secondHour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .boxContainer .contactBox .contactNumbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .boxContainer .contactBox .contactNumbers .numbersP {
+    letter-spacing: 3px;
+  }
+}/*# sourceMappingURL=contact.css.map */

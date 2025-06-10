@@ -1,0 +1,236 @@
+body input[type="number"]::-webkit-inner-spin-button,
+body input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+body input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: #2196f3;
+  border-radius: 50%;
+  pointer-events: auto; }
+
+body input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: #2196f3;
+  border-radius: 50%;
+  pointer-events: auto; }
+
+body .filtering-container {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px; }
+  body .filtering-container .filtering-container-left {
+    /* Styles for the price input container */
+    /* Remove Arrows/Spinners */ }
+    body .filtering-container .filtering-container-left .custom-wrapper {
+      margin: 0;
+      width: 100%;
+      padding: 0px 25px 40px;
+      position: relative;
+      left: 63px; }
+    body .filtering-container .filtering-container-left .header h2 {
+      font-size: 30px;
+      color: #01940b;
+      display: flex;
+      justify-content: center;
+      padding: 20px; }
+    body .filtering-container .filtering-container-left .price-input-container {
+      width: 100%; }
+    body .filtering-container .filtering-container-left .price-input {
+      width: 100%;
+      font-size: 19px;
+      color: #555;
+      display: flex;
+      gap: 20px; }
+      body .filtering-container .filtering-container-left .price-input .price-field {
+        display: flex;
+        margin-bottom: 22px;
+        gap: 12px; }
+        body .filtering-container .filtering-container-left .price-input .price-field span {
+          margin-top: 6px;
+          font-size: 17px; }
+        body .filtering-container .filtering-container-left .price-input .price-field input {
+          flex: 1;
+          height: 35px;
+          font-size: 15px;
+          font-family: "DM Sans", sans-serif;
+          border-radius: 9px;
+          text-align: center;
+          border: 0px;
+          background: #e4e4e4;
+          width: 125px; }
+    body .filtering-container .filtering-container-left input::-webkit-outer-spin-button, body .filtering-container .filtering-container-left input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    body .filtering-container .filtering-container-left .slider {
+      width: 100%;
+      height: 6px;
+      position: relative;
+      background: #e4e4e4;
+      border-radius: 5px; }
+      body .filtering-container .filtering-container-left .slider .price-slider {
+        height: 100%;
+        left: 25%;
+        right: 15%;
+        position: absolute;
+        border-radius: 5px;
+        background: #01940b; }
+    body .filtering-container .filtering-container-left .range-input {
+      position: relative; }
+      body .filtering-container .filtering-container-left .range-input input {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: none;
+        top: -5px;
+        pointer-events: none;
+        cursor: pointer;
+        -webkit-appearance: none; }
+        body .filtering-container .filtering-container-left .range-input input[type="range"]::-webkit-slider-thumb {
+          height: 18px;
+          width: 18px;
+          border-radius: 70%;
+          background: #555;
+          pointer-events: auto;
+          -webkit-appearance: none; }
+  body .filtering-container .filtering-container-right .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+    background-color: grey;
+    border-radius: 20px; }
+    body .filtering-container .filtering-container-right .switch:hover {
+      cursor: pointer; }
+    body .filtering-container .filtering-container-right .switch .usd-currency .usdcurrency {
+      color: green; }
+    body .filtering-container .filtering-container-right .switch .gel-currency .gel-currency {
+      color: black; }
+  body .filtering-container .filtering-container-right .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  body .filtering-container .filtering-container-right .currency-USD .usd-currency {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    z-index: 1;
+    width: 24px;
+    height: 24px; }
+  body .filtering-container .filtering-container-right .currency-GEL .gel-currency {
+    fill: #73C0FC;
+    position: absolute;
+    top: 10px;
+    left: 38px;
+    z-index: 1;
+    width: 24px;
+    height: 24px; }
+
+body section #wrapp .productCard {
+  display: flex;
+  margin-top: 50px; }
+  body section #wrapp .productCard .images img {
+    width: 27%; }
+  body section #wrapp .productCard .description {
+    width: 15%;
+    border-right: 1px solid rgba(0, 0, 0, 0.329); }
+    body section #wrapp .productCard .description p {
+      color: black; }
+    body section #wrapp .productCard .description p.productTxt {
+      font-weight: 600; }
+  body section #wrapp .productCard .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body section #wrapp .productCard .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body section #wrapp .productCard .bedrooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body section #wrapp .productCard .square-meter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body section #wrapp .productCard .floor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body section #wrapp .productCard .apartamentinfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%; }
+    body section #wrapp .productCard .apartamentinfo .apartment-card {
+      display: flex;
+      width: 100%;
+      height: 330px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.329); }
+      body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-images {
+        width: 30%; }
+        body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-images .main-image-container {
+          width: 77%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-images .main-image-container img {
+            width: 100%; }
+      body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 100px; }
+        body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-square-meter {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-square-meter label {
+            font-weight: 600;
+            color: black; }
+          body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-square-meter p {
+            color: black; }
+        body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-bedrooms {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-bedrooms label {
+            font-weight: 600;
+            color: black; }
+          body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-bedrooms p {
+            color: black; }
+        body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-price {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-price label {
+            font-weight: 600;
+            display: flex;
+            width: 50px;
+            justify-content: center;
+            align-items: center;
+            color: black; }
+          body section #wrapp .productCard .apartamentinfo .apartment-card .apartment-details .apartment-price p {
+            width: 63px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black; }
+
+/*# sourceMappingURL=product.css.map */

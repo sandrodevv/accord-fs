@@ -1,0 +1,42 @@
+aside {
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    top: 200px;
+    z-index: 2;
+    
+    .socialsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: transparent;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        a {
+            font-size: 20px;
+             color: black;
+            transition: 1s;
+             &:hover {
+                color: rgba(0, 0, 0, 0.548);
+                transition: 1s;
+             }
+             .whatsapp {
+                margin-left: 2px;
+             }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    
+    aside {
+        display: none;
+        
+    }
+    .apartamentBox {
+        padding-top: 120px;
+    }
+}

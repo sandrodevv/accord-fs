@@ -1,0 +1,207 @@
+html {
+  scroll-behavior: smooth; }
+
+section .carouselBoot .carousel .carousel-item {
+  transition: 3s; }
+
+@media screen and (max-width: 1290px) {
+  main {
+    overflow: hidden; } }
+
+main .projectH1 {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  main .projectH1 h1 {
+    font-family: Montserrat;
+    font-size: 31px; }
+  main .projectH1 p {
+    font-family: Montserrat;
+    margin-bottom: 0px; }
+  main .projectH1 .projectP1 {
+    font-size: 65px;
+    letter-spacing: 7px; }
+  main .projectH1 .projectP2 {
+    font-size: 15px;
+    letter-spacing: 9px; }
+
+main #wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 100px 100px 0px;
+  max-width: 2500px; }
+  main #wrapp .productCard {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    box-shadow: -2px 5px 8px 0px;
+    transition: 1s; }
+    main #wrapp .productCard .imgCard {
+      transition: 1s; }
+      main #wrapp .productCard .imgCard img {
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 500px;
+        z-index: -1; }
+    main #wrapp .productCard:hover {
+      transition: 1s;
+      cursor: pointer; }
+      main #wrapp .productCard:hover .imgCard {
+        filter: blur(1px);
+        transition: 1s; }
+    main #wrapp .productCard .description {
+      display: flex;
+      flex-direction: column; }
+      main #wrapp .productCard .description .title {
+        width: 100%; }
+        main #wrapp .productCard .description .title .productTxt {
+          display: flex;
+          justify-content: center;
+          width: 30%;
+          font-family: Montserrat; }
+      main #wrapp .productCard .description .locationName {
+        width: 100%; }
+        main #wrapp .productCard .description .locationName .productTxt {
+          display: flex;
+          justify-content: center;
+          width: 30%;
+          font-family: Montserrat; }
+      main #wrapp .productCard .description .category {
+        width: 100%; }
+        main #wrapp .productCard .description .category .productTxt {
+          display: flex;
+          justify-content: center;
+          width: 30%;
+          font-family: Montserrat; }
+
+@media screen and (max-width: 1100px) {
+  main {
+    height: auto !important; }
+  .couples {
+    flex-direction: column;
+    margin-bottom: 140px;
+    gap: 0px !important; } }
+
+@media screen and (max-width: 815px) {
+  main .projectH1 h1 {
+    font-size: 23px; }
+  main .projectH1 .projectP1 {
+    font-size: 45px;
+    letter-spacing: 10px; }
+  main .projectH1 .projectP2 {
+    font-size: 11px;
+    letter-spacing: 11px; } }
+
+@media screen and (max-width: 615px) {
+  main .projectH1 h1 {
+    font-size: 18px; }
+  main .projectH1 .projectP1 {
+    font-size: 38px;
+    letter-spacing: 13px; }
+  main .projectH1 .projectP2 {
+    font-size: 10px;
+    letter-spacing: 13px; } }
+
+@media screen and (max-width: 580px) {
+  main .apartamentBox .couples .box {
+    width: 441px;
+    height: 415px; } }
+
+@media screen and (max-width: 480px) {
+  main .projectH1 h1 {
+    font-size: 17px; }
+  main .projectH1 .projectP1 {
+    font-size: 36px; }
+  main .projectH1 .projectP2 {
+    font-size: 10px;
+    letter-spacing: 11px; } }
+
+@media screen and (max-width: 470px) {
+  main .apartamentBox .couples .box {
+    width: 425px;
+    height: 407px; } }
+
+@media screen and (max-width: 450px) {
+  main .apartamentBox .couples .box {
+    width: 408px;
+    height: 399px; } }
+
+@media screen and (max-width: 445px) {
+  main .projectH1 h1 {
+    font-size: 16px; }
+  main .projectH1 .projectP1 {
+    font-size: 35px; }
+  main .projectH1 .projectP2 {
+    font-size: 10px;
+    letter-spacing: 10px; } }
+
+@media screen and (max-width: 432px) {
+  main .apartamentBox .couples .box {
+    width: 393px;
+    height: 410px; } }
+
+@media screen and (max-width: 420px) {
+  main .projectH1 h1 {
+    font-size: 15px; }
+  main .projectH1 .projectP1 {
+    font-size: 34px; }
+  main .projectH1 .projectP2 {
+    font-size: 9px;
+    letter-spacing: 10px; } }
+
+@media screen and (max-width: 410px) {
+  main .apartamentBox .couples .box {
+    width: 373px;
+    height: 394px; } }
+
+@media screen and (max-width: 400px) {
+  main .projectH1 h1 {
+    font-size: 14px; }
+  main .projectH1 .projectP1 {
+    font-size: 31px;
+    letter-spacing: 14px; }
+  main .projectH1 .projectP2 {
+    font-size: 9px;
+    letter-spacing: 10px; } }
+
+@media screen and (max-width: 395px) {
+  main .apartamentBox .couples .box {
+    width: 363px;
+    height: 386px; } }
+
+@media screen and (max-width: 370px) {
+  main .projectH1 h1 {
+    font-size: 13px; }
+  main .projectH1 .projectP1 {
+    font-size: 28px;
+    letter-spacing: 14px; }
+  main .projectH1 .projectP2 {
+    font-size: 9px;
+    letter-spacing: 9px; } }
+
+@media screen and (max-width: 381px) {
+  main .apartamentBox .couples .box {
+    width: 355px;
+    height: 377px; } }
+
+@media screen and (max-width: 381px) {
+  main .apartamentBox .couples .box {
+    width: 355px;
+    height: 377px; } }
+
+@media screen and (max-width: 368px) {
+  main .apartamentBox .couples .box {
+    width: 335px;
+    height: 355px; } }
+
+@media screen and (max-width: 36px) {
+  main .apartamentBox .couples .box {
+    width: 345px;
+    height: 368px; } }
+
+/*# sourceMappingURL=index.css.map */
